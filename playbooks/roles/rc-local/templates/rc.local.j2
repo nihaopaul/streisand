@@ -11,7 +11,9 @@
 #
 
 # OpenConnect
+{% if ocserv_firewall_rule is defined %}
 {{ ocserv_firewall_rule }}
+{% endif %}
 
 # OpenVPN
 {% if openvpn_firewall_rules is defined %}
